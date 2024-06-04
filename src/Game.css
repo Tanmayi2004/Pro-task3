@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3b4e1; /* Light grey background for the page */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.App {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the game container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.status {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.board-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.square {
+    width: 90px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #999;
+    background: #fff;
+    transition: background 0.3s; /* Smooth transition for background change */
+}
+
+.square:hover {
+    background: #eee8e8; /* Slight background change on hover */
+}
+
+.square:focus {
+    outline: none;
+}
+
+.winning-square {
+    background-color: #95ecdc; /* Yellow background for winning squares */
+}
+
+.reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.reset-button:hover {
+    background-color: #0056b3;
+}
